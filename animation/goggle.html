@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Logo Animation</title>
+  <style>
+    @keyframes colorChange {
+      0% { color: #4285F4; }
+      20% { color: #EA4335; }
+      40% { color: #FBBC05; }
+      60% { color: #34A853; }
+      80% { color: #4285F4; }
+      100% { color: #EA4335; }
+    }
+
+    .logo span {
+      font-size: 5rem;
+      font-weight: bold;
+      display: inline-block;
+      animation: colorChange 2s infinite;
+    }
+
+    .logo span:nth-child(1) { animation-delay: 0s; }
+    .logo span:nth-child(2) { animation-delay: 0.2s; }
+    .logo span:nth-child(3) { animation-delay: 0.4s; }
+    .logo span:nth-child(4) { animation-delay: 0.6s; }
+    .logo span:nth-child(5) { animation-delay: 0.8s; }
+    .logo span:nth-child(6) { animation-delay: 1s; }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <span>G</span>
+    <span>o</span>
+    <span>o</span>
+    <span>g</span>
+    <span>l</span>
+    <span>e</span>
+  </div>
+</body>
+</html>
